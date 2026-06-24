@@ -4,8 +4,8 @@
 Prompt:
 Importa los datos de src/data/recetas hacia app.tsx y muestralos mediante la consola.
 Respuesta: Importé los datos en `App.tsx` desde `src/data/recetas.ts` y los muestro con `console.log`.
-Utilidad:
-Modificaciones del usuario:
+Utilidad: Lo entregado fue útil, ya que permitió setear lo básico para la página sin ningún esfuerzo.
+Modificaciones del usuario: No se modificó nada
 
 Prompt:
 crea un archivo llamado "ia.txt" que contenga cada prompt que haya dado y que te de desde ahora en adelante, con el siguiente formato:
@@ -16,8 +16,9 @@ crea un archivo llamado "ia.txt" que contenga cada prompt que haya dado y que te
     Modificaciones del usuario: (Deja esto vacío)
 
 Respuesta: Creé el archivo `ia.txt` con el formato solicitado y comienzo el registro de prompts.
-Utilidad:
-Modificaciones del usuario:
+Utilidad: Bastante útil, ya que acelera el proceso de escribir el archivo completo a medida que se va avanzando en el proyecto.
+Modificaciones del usuario: Algunas veces lo que rellenaba el chat-bot no estaba en la posición correcta, así que había que manualmente
+moverlos uno mismo.
 
 [Segunda etapa]
 
@@ -31,14 +32,14 @@ Lo siguiente corresponde a la segunda etapa del proyecto:
 
 Recuerda que debes actualizar ia.txt según el formato que te di con anterioridad.
 Respuesta: Creé `src/components/RecetaCard.jsx`, actualicé `App.tsx` para renderizar tarjetas de recetas y agregué estilos diferenciados por categoría.
-Utilidad:
-Modificaciones del usuario:
+Utilidad: Útil, ya que permite rápidamente integrar las bases del proyecto de una forma en la que luego se puede fácilmente modificar por parte del usuario.
+Modificaciones del usuario: Ninguna
 
 Prompt:
 recuerda quitar lo que venía por default en la app.tsx
 Respuesta: Eliminé el contenido predeterminado de Vite en `App.tsx` y dejé solo la sección de recetas.
-Utilidad:
-Modificaciones del usuario:
+Utilidad: Útil, en el prompt anterior el chat-bot dejó la base de la página default de vite y solo agrego las tarjetas de las recetas, por lo que tuve que pedirle que lo modificara.
+Modificaciones del usuario: Nada
 
 [Tercera etapa]
 
@@ -50,14 +51,14 @@ Ahora pasamos a la tercera etapa:
 3. Asigna correctamente la prop key usando el id de cada elemento (no uses el índice del array). 
 4. En App.jsx, renderiza ListaRecetas pasándole los datos importados.
 Respuesta: Creé `src/components/ListaRecetas.jsx`, actualicé `App.tsx` para renderizar `ListaRecetas` con `recetas` importadas y usé `id` como key.
-Utilidad:
-Modificaciones del usuario:
+Utilidad: Útil, ya que así se dividen de mejor forma las recetas y así se tiene un componente que puede ser reutilizado más adelante.
+Modificaciones del usuario: Nada
 
 Prompt:
 verifica errores
 Respuesta: Revisé errores y corregí el TS config para permitir archivos `.jsx` importados desde TypeScript.
-Utilidad:
-Modificaciones del usuario:
+Utilidad: Útil, ya que había un error a la hora de importar el archivo ListaRecetas porque al parecer no era compatible su sintaxis con tsx.
+Modificaciones del usuario: Ninguna
 
 [Cuarta etapa]
 
@@ -71,8 +72,8 @@ Ahora pasamos a la cuarta etapa:
 
 Modifica el archivo IA desde [Cuarta etapa]
 Respuesta: Creé `src/components/FiltroCategoria.jsx`, agregué filtros de categoría y búsqueda en `App.tsx`, apliqué ambos filtros antes de renderizar `ListaRecetas` y mostré el mensaje de no resultados.
-Utilidad:
-Modificaciones del usuario:
+Utilidad: Útil, ya que permitió crear un filtro de búsqueda de forma rápida y sin complicaciones.
+Modificaciones del usuario: Ninguna
 
 Prompt:
 Implementa estas buenas prácticas para esta etapa:
@@ -80,6 +81,8 @@ Implementa estas buenas prácticas para esta etapa:
 • El campo de búsqueda debe ser un componente controlado (su valor vive en el estado de React). 
 • Valida y normaliza el texto de búsqueda (recorta espacios y limita el largo) antes de usarlo, para no confiar ciegamente en la entrada del usuario.
 Respuesta: Convertí el campo de búsqueda en un componente controlado y normalicé el texto con trim y slice antes de aplicar el filtro.
+Utilidad: Parcialmente útil, son buenas prácticas que deberían ser recordadas y aplicadas en proyectos reales, pero el no implementarlas en este prototipo no impedía su funcionamiento.
+Modificaciones del usuario: Ninguna
 
 [Quinta etapa]
 
@@ -89,5 +92,5 @@ Ahora empezamos la quinta etapa:
 1. Resalta visualmente los elementos con esVegetariana: true (por ejemplo, una etiqueta “VEG” o un borde distinto). 
 2. Agrega un contador que muestre cuántas recetas son vegetarianas.
 Respuesta: Añadí una etiqueta VEG en `RecetaCard`, resalté las tarjetas vegetarianas y agregué un contador de recetas vegetarianas en `App.tsx`.
-Utilidad:
-Modificaciones del usuario:
+Utilidad: Útil, ya que agregó lo que se le pidió y es una buena forma de resaltar aquellos alimentos con algún tipo de receta especial.
+Modificaciones del usuario: Nada
