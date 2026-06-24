@@ -80,3 +80,14 @@ Implementa estas buenas prácticas para esta etapa:
 • El campo de búsqueda debe ser un componente controlado (su valor vive en el estado de React). 
 • Valida y normaliza el texto de búsqueda (recorta espacios y limita el largo) antes de usarlo, para no confiar ciegamente en la entrada del usuario.
 Respuesta: Convertí el campo de búsqueda en un componente controlado y normalicé el texto con trim y slice antes de aplicar el filtro.
+
+[Quinta etapa]
+
+Prompt:
+Ahora empezamos la quinta etapa:
+
+1. Resalta visualmente los elementos con esVegetariana: true (por ejemplo, una etiqueta “VEG” o un borde distinto). 
+2. Agrega un contador que muestre cuántas recetas son vegetarianas.
+Respuesta: Añadí una etiqueta VEG en `RecetaCard`, resalté las tarjetas vegetarianas y agregué un contador de recetas vegetarianas en `App.tsx`.
+Utilidad:
+Modificaciones del usuario:

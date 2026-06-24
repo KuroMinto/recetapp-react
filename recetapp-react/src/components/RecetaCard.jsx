@@ -1,10 +1,11 @@
-function RecetaCard({ nombre, origen, porciones, categoria, descripcion, ingredientes }) {
+function RecetaCard({ nombre, origen, porciones, categoria, descripcion, ingredientes, esVegetariana }) {
   const categoryClass = categoria.toLowerCase()
 
   return (
-    <article className={`receta-card receta-${categoryClass}`}>
+    <article className={`receta-card receta-${categoryClass} ${esVegetariana ? 'vegetariana' : ''}`}>
       <div className="receta-card-header">
         <span className="receta-category">{categoria}</span>
+        {esVegetariana && <span className="receta-badge">VEG</span>}
         <h3>{nombre}</h3>
         <p className="receta-origen">Origen: {origen}</p>
       </div>

@@ -19,10 +19,15 @@ function App() {
     return matchesCategory && matchesSearch
   })
 
+  const vegetarianCount = filteredRecetas.filter((receta) => receta.esVegetariana).length
+
   return (
     <main>
       <section id="recetas">
         <h1>Recetas</h1>
+        <div className="recetas-header">
+          <p className="vegetarian-count">Recetas vegetarianas: {vegetarianCount}</p>
+        </div>
         <div className="recetas-filtros">
           <FiltroCategoria
             selectedCategory={selectedCategory}

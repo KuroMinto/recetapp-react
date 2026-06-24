@@ -212,6 +212,36 @@
   margin-top: 20px;
 }
 
+.recetas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.vegetarian-count {
+  font-weight: 700;
+  color: #2d6a3b;
+}
+
+.receta-badge {
+  display: inline-flex;
+  margin-left: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #d9f5e8;
+  color: #1f6b4d;
+}
+
+.receta-card.vegetariana {
+  border-color: #1f6b4d;
+  box-shadow: 0 16px 35px rgba(31, 107, 77, 0.12);
+}
+
 .receta-grid {
   display: grid;
   gap: 20px;
