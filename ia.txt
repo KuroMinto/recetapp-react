@@ -1,0 +1,19 @@
+[Primera etapa]
+
+Prompt:
+Importa los datos de src/data/recetas hacia app.tsx y muestralos mediante la consola.
+Respuesta: Importé los datos en `App.tsx` desde `src/data/recetas.ts` y los muestro con `console.log`.
+Utilidad:
+Modificaciones del usuario:
+
+Prompt:
+crea un archivo llamado "ia.txt" que contenga cada prompt que haya dado y que te de desde ahora en adelante, con el siguiente formato:
+
+Prompt:
+Respuesta: (Esta debe ser resumida)
+Utilidad: (deja esto vacío, lo rellenaré yo)
+Modificaciones del usuario: (Deja esto vacío)
+
+Respuesta: Creé el archivo `ia.txt` con el formato solicitado y comienzo el registro de prompts.
+Utilidad:
+Modificaciones del usuario:
