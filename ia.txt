@@ -1,3 +1,4 @@
+[Parte B]
 [Primera etapa]
 
 Prompt:
@@ -17,3 +18,25 @@ Modificaciones del usuario: (Deja esto vacío)
 Respuesta: Creé el archivo `ia.txt` con el formato solicitado y comienzo el registro de prompts.
 Utilidad:
 Modificaciones del usuario:
+
+[Segunda etapa]
+
+Prompt:
+Lo siguiente corresponde a la segunda etapa del proyecto:
+
+1. Crea src/components/RecetaCard.jsx. 
+2. El componente recibe por props: nombre, origen, porciones, categoria, descripcion, ingredientes. 
+3. Muestra la información de forma visual y ordenada. 
+4. Aplica un estilo diferenciado según la categoría (un color/etiqueta distinto para Entrada, Fondo, Postre).
+
+Recuerda que debes actualizar ia.txt según el formato que te di con anterioridad.
+Respuesta: Creé `src/components/RecetaCard.jsx`, actualicé `App.tsx` para renderizar tarjetas de recetas y agregué estilos diferenciados por categoría.
+Utilidad:
+Modificaciones del usuario:
+
+Prompt:
+recuerda quitar lo que venía por default en la app.tsx
+Respuesta: Eliminé el contenido predeterminado de Vite en `App.tsx` y dejé solo la sección de recetas.
+Utilidad:
+Modificaciones del usuario:
+
