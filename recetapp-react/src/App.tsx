@@ -1,5 +1,5 @@
 import { recetas } from './data/recetas'
-import RecetaCard from './components/RecetaCard'
+import ListaRecetas from './components/ListaRecetas'
 import './App.css'
 
 function App() {
@@ -9,11 +9,7 @@ function App() {
     <main>
       <section id="recetas">
         <h1>Recetas</h1>
-        <div className="receta-grid">
-          {recetas.map((receta) => (
-            <RecetaCard key={receta.id} {...receta} />
-          ))}
-        </div>
+        <ListaRecetas recetas={recetas} />
       </section>
     </main>
   )

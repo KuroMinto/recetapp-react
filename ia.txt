@@ -40,3 +40,21 @@ Respuesta: Eliminé el contenido predeterminado de Vite en `App.tsx` y dejé sol
 Utilidad:
 Modificaciones del usuario:
 
+[Tercera etapa]
+
+Prompt:
+Ahora pasamos a la tercera etapa:
+
+1. Crea src/components/ListaRecetas.jsx que reciba el array de recetas por props. 
+2. Recorre el array con .map() y renderiza un RecetaCard por cada receta. Programación Front End (TI3031) — Sumativa U3 · V4 Página 5 
+3. Asigna correctamente la prop key usando el id de cada elemento (no uses el índice del array). 
+4. En App.jsx, renderiza ListaRecetas pasándole los datos importados.
+Respuesta: Creé `src/components/ListaRecetas.jsx`, actualicé `App.tsx` para renderizar `ListaRecetas` con `recetas` importadas y usé `id` como key.
+Utilidad:
+Modificaciones del usuario:
+
+Prompt:
+verifica errores
+Respuesta: Revisé errores y corregí el TS config para permitir archivos `.jsx` importados desde TypeScript.
+Utilidad:
+Modificaciones del usuario:
