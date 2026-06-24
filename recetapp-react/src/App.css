@@ -165,8 +165,51 @@
   padding: 32px;
 }
 
-#recetas h2 {
+#recetas h1 {
+  margin-bottom: 18px;
+}
+
+.recetas-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
   margin-bottom: 24px;
+}
+
+.filtro-categoria {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filtro-categoria button {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #f5f5f5;
+  color: #121212;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.filtro-categoria button.active {
+  background: #121212;
+  color: #ffffff;
+}
+
+.recetas-filtros input[type='search'] {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 10px 14px;
+  min-width: 220px;
+  flex: 1 1 260px;
+}
+
+.no-results {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.65);
+  margin-top: 20px;
 }
 
 .receta-grid {

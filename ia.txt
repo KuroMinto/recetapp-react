@@ -10,10 +10,10 @@ Modificaciones del usuario:
 Prompt:
 crea un archivo llamado "ia.txt" que contenga cada prompt que haya dado y que te de desde ahora en adelante, con el siguiente formato:
 
-Prompt:
-Respuesta: (Esta debe ser resumida)
-Utilidad: (deja esto vacío, lo rellenaré yo)
-Modificaciones del usuario: (Deja esto vacío)
+    Prompt:
+    Respuesta: (Esta debe ser resumida)
+    Utilidad: (deja esto vacío, lo rellenaré yo)
+    Modificaciones del usuario: (Deja esto vacío)
 
 Respuesta: Creé el archivo `ia.txt` con el formato solicitado y comienzo el registro de prompts.
 Utilidad:
@@ -58,3 +58,25 @@ verifica errores
 Respuesta: Revisé errores y corregí el TS config para permitir archivos `.jsx` importados desde TypeScript.
 Utilidad:
 Modificaciones del usuario:
+
+[Cuarta etapa]
+
+Prompt:
+Ahora pasamos a la cuarta etapa:
+
+1. Crea src/components/FiltroCategoria.jsx con botones o un selector para filtrar por la categoría: “Todas”, “Entrada”, “Fondo”, “Postre”. 
+2. En App.jsx, usa useState para guardar el filtro seleccionado y un campo de búsqueda por nombre. 
+3. Aplica ambos filtros sobre el array antes de pasarlo a ListaRecetas. 
+4. Usa renderizado condicional para mostrar el mensaje “No hay recetas que coincidan” cuando el resultado quede vacío.
+
+Modifica el archivo IA desde [Cuarta etapa]
+Respuesta: Creé `src/components/FiltroCategoria.jsx`, agregué filtros de categoría y búsqueda en `App.tsx`, apliqué ambos filtros antes de renderizar `ListaRecetas` y mostré el mensaje de no resultados.
+Utilidad:
+Modificaciones del usuario:
+
+Prompt:
+Implementa estas buenas prácticas para esta etapa:
+
+• El campo de búsqueda debe ser un componente controlado (su valor vive en el estado de React). 
+• Valida y normaliza el texto de búsqueda (recorta espacios y limita el largo) antes de usarlo, para no confiar ciegamente en la entrada del usuario.
+Respuesta: Convertí el campo de búsqueda en un componente controlado y normalicé el texto con trim y slice antes de aplicar el filtro.
